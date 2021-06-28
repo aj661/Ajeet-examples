@@ -1,0 +1,9 @@
+---
+- name: 1. install Apache
+  apt: name=apache2 state=present
+
+- name: 3. start Apache
+  service: name=apache2 state=running enabled=yes
+
+- name: 4. install Hello World PHP script
+  copy: src=index.php dest=/var/www/html/index.php mode=0664
