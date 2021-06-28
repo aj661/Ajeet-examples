@@ -1,0 +1,10 @@
+---
+
+- hosts: localhost
+  
+   tasks:
+     - name: templates examples
+       template:
+           src:  {{ vars_example }}
+           dest: /tmp/output.txt
+
