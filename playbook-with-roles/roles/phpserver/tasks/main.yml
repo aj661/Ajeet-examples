@@ -1,0 +1,5 @@
+--- 
+- name: install php server
+  become: yes
+  become_user: root
+  apt: name=php state=present

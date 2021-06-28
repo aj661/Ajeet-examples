@@ -1,0 +1,5 @@
+---      
+- name: install mysql database
+  become: true
+  become_user: root
+  apt: name=mysql-server  state=present

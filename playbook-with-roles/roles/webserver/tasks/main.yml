@@ -1,0 +1,20 @@
+---
+- name: install webserver apache2
+  become: yes
+  become_user: root
+  apt: name=apache2 state=present
+
+
+
+- name: start apache2 
+  become: yes
+  become_user: root
+  service: name=apache2 state=restarted  enabled=yes
+
+
+- name: deploy index.html
+  become: yes
+  become_user: root
+  copy: 
+      src: /tmp/index.html
+      dest: /var/www/html/index.html   
