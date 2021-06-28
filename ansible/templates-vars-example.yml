@@ -1,17 +1,16 @@
 ---
 - name: vars examples playbook
-  hosts: localhost
+  hosts: localhost 
   become: yes
   become_user: root
-
-
-  vars:
-      var1: "ajeet"
-      var2: "gwalior"
-      var3: "ncs"
+  
+   
+  vars_files:
+      - vars/external-vars.yml
+  
   tasks:
       - name: template-vars example
         template:
               src: /ansible/templates/example.j2
-              dest: /tmp/output.txt
-
+              dest: /ansible/output.txt
+        

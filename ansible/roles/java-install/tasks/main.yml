@@ -20,5 +20,3 @@
   become: yes
   become_user: root
   apt: name=openjdk-8-jdk state=present  
-
-
