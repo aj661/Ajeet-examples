@@ -3,7 +3,7 @@ pipeline {
         stages { 
             stage('stage 1'){
                 steps{
-                    sh 'jenkins --version'
+                    echo "hellow"
                 }
             }
             stage('stage 2'){
