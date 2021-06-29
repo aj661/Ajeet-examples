@@ -5,7 +5,7 @@
 $x
 $y
 
-echo "x=6, y=4"
+#echo "x=6, y=4"
 
 echo "Addition of x & y"
 
