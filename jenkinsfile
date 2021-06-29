@@ -3,12 +3,12 @@ pipeline {
         stages { 
             stage('stage 1'){
                 steps{
-                    sh 'jenkins --version
+                    sh 'jenkins --version'
                 }
             }
             stage('stage 2'){
                 steps{
-                    sh 'ansible --version
+                    sh 'apache2 --version'
                }
             }
             stage('stage 3'){
