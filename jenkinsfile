@@ -1,10 +1,19 @@
-pipeline{
-agent any
-stages{
-stage('stage 1'){
-steps{
-echo "hellow world"
-}
-}
-}
+pipeline {
+    agent any
+        stages { 
+            stage('stage 1'){
+                steps{
+                    echo "hellow world"
+                }
+            }
+            stage('stage 2'){
+                steps{
+                echo "my name is ajeet sharma"
+            }
+            stage('stage 3'){
+                steps {
+                    echo " i am working in nenosystems"
+                }
+            }
+        }   
 }
