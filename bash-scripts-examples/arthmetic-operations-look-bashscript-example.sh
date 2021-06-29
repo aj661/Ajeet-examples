@@ -2,8 +2,6 @@
 
 # this is basic  bash script 
  
-$x
-$y
 
 #echo "x=6, y=4"
 
