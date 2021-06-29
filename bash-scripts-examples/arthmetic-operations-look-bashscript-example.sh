@@ -26,5 +26,4 @@ echo $(($x/$y))
 echo "Moduler division of x & y"
 
 echo $(($x%$y))
-echo "hello world"
 
