@@ -8,7 +8,7 @@ pipeline {
             }
             stage('stage 2'){
                 steps{
-                    sh 'apache2 --version'
+                    echo 'i am ajeet sharma'
                }
             }
             stage('stage 3'){
