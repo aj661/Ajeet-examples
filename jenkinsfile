@@ -16,6 +16,11 @@ pipeline {
                     echo " i am working in nenosystems"
                 }
             }
+            stage('stage 4'){
+                steps {
+                    sh 'git --version'
+                }
+            }
             
         }   
 }
