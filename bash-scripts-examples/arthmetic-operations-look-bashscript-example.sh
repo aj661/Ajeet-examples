@@ -27,4 +27,3 @@ echo "Moduler division of x & y"
 
 echo $(($x%$y))
 echo "hello world"
-echo "hellow from github"
