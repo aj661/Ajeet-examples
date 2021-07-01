@@ -1,0 +1,22 @@
+---
+- name: update system
+  apt:
+     name: "*" 
+     state: latest
+
+- name: install default jdk 
+  become: yes
+  become_user: root
+  apt: name=default-jdk state=present
+
+
+- name: update system
+  apt:
+     name: "*"
+     state: latest
+
+
+- name: install default jdk
+  become: yes
+  become_user: root
+  apt: name=openjdk-8-jdk state=present  

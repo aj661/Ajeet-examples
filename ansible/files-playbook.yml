@@ -1,0 +1,21 @@
+---
+- hosts: localhost
+
+
+  tasks:
+    - name: creating files with permisiion 
+      become: yes 
+      become_user: root
+      file:
+         path: /tmp/file-example-txt
+         state: touch
+         mode: 0777
+         owner: root
+    - name: creating directory with permission
+      become: yes
+      become_user: root     
+      file:
+         path: /tmp/directory-example
+         state: directory
+         mode: 0766
+         owner: root
